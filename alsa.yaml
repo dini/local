@@ -1,0 +1,10 @@
+---
+- name: Install alsa
+  become: true
+  pacman:
+    name:
+      - alsa-utils
+      - alsa-plugins
+      - alsa-lib
+    state: present
+...
